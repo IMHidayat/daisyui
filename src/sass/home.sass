@@ -1,0 +1,21 @@
+main
+  @apply flex-col
+  article
+    @apply rounded-xl
+    @apply bg-base-300
+    h1
+      @apply text-2xl font-bold text-center     
+  
+  section
+    @apply bg-base-300
+  
+  .article_col_2
+    @apply grid gap-5 xl:grid-cols-2
+    @apply bg-transparent
+    section
+      @apply grid grid-rows-[auto_1fr]
+      @apply rounded-xl
+
+  .testing
+    &::after
+      content: "asdfasdf"
