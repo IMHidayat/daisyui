@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../sass/home.sass";
-// import "../sass/test.css";
+
 export default function Home() {
   let [time, setTime] = useState(60);
   useEffect(() => {
@@ -10,9 +10,24 @@ export default function Home() {
     }, 1000);
     return () => clearInterval(interval);
   });
+
   return (
     <>
-      <main className="flex overflow-hidden gap-5 md:px-32 md:py-10">
+      <main className="flex md:px-32 md:py-10">
+        {/* BACKGROUND */}
+        <article className="article_bg mb-10">
+          <section>
+            <div className="bg-base-content">BASE CONTENT</div>
+            <div className="bg-base-100">BASE 100</div>
+            <div className="bg-base-200">BASE 200</div>
+            <div className="bg-base-300">BASE 300</div>
+            <div className="bg-primary">PRIMARY</div>
+            <div className="bg-secondary">SECONDARY</div>
+            <div className="bg-warning">WARNING</div>
+            <div className="bg-info">INFO</div>
+            <div className="bg-error">ERROR</div>
+          </section>
+        </article>
         {/* ALERT */}
         <article>
           <section>
@@ -37,28 +52,28 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <button className="btn btn-sm md:btn-md rounded-full hover:opacity-80">Show</button>
-                  <button className="btn btn-sm md:btn-md btn-ghost rounded-full border-black">Hide</button>
+                  <button className="btn btn-primary btn-sm md:btn-md rounded-full">Show</button>
+                  <button className="btn btn-secondary btn-sm md:btn-md btn-outline rounded-full">Hide</button>
                 </div>
               </div>
             </div>
           </section>
         </article>
         {/* ARTBOARD */}
-        <article>
+        <article className="article_artboard">
           <section>
             <h1 className="pt-6">Artboard</h1>
-            <div className="flex gap-10 flex-wrap justify-center items-center p-5">
-              <div className="artboard phone-1 grid place-items-center shadow-lg bg-white">320×568</div>
-              <div className="artboard artboard-horizontal phone-1 grid place-items-center shadow-lg bg-white">568×320</div>
+            <div className="flex p-5 gap-10 flex-wrap justify-center items-center">
+              <div className="artboard phone-1 grid">320×568</div>
+              <div className="artboard artboard-horizontal phone-1 grid">568×320</div>
             </div>
           </section>
         </article>
         {/* AVATAR & BADGE */}
-        <article className="article_col_2">
+        <article className="col_2">
           <section>
             <h1 className="pt-6">Avatar</h1>
-            <div className="grid justify-items-center md:grid-cols-3 gap-10 p-5 py-10">
+            <div className="grid p-5 py-10 gap-10 justify-items-center md:grid-cols-3 ">
               <div>
                 <div className="avatar">
                   <div className="w-16 rounded-full">
@@ -68,7 +83,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="avatar online">
-                  <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <div className="w-16 rounded-full ring ring-success ring-offset-base-100 ring-offset-2">
                     <img src="https://i.ibb.co/x53Qr27/kekw.jpg" />
                   </div>
                 </div>
@@ -101,7 +116,7 @@ export default function Home() {
           </section>
           <section>
             <h1 className="pt-6">Badge </h1>
-            <div className="grid justify-center items-center p-5 py-10">
+            <div className="grid p-5 py-10 justify-center items-center ">
               <span className="badge">+99</span>
             </div>
           </section>
@@ -110,7 +125,7 @@ export default function Home() {
         <article>
           <section>
             <h1 className="pt-6">Bottom Navigation</h1>
-            <div className="justify-items-center md:grid-cols-3 gap-5 p-5 py-10">
+            <div className="p-5 py-10">
               <div className="btm-nav relative">
                 <button>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -132,7 +147,7 @@ export default function Home() {
           </section>
         </article>
         {/* BREADCRUMB & BUTTON */}
-        <article className="article_col_2">
+        <article className="col_2">
           <section>
             <h1 className="pt-6 ">Breadcrumb</h1>
             <div className="flex flex-wrap justify-center gap-5 p-5 py-10">
@@ -177,8 +192,8 @@ export default function Home() {
           </section>
           <section>
             <h1 className="pt-6">Button</h1>
-            <div className="flex flex-wrap justify-center items-center sm:gap-5 p-5 py-10">
-              <button className="btn">Click</button>
+            <div className="flex p-5 py-10 sm:gap-5 flex-wrap justify-center items-center ">
+              <button className="btn btn-primary">Click</button>
             </div>
           </section>
         </article>
@@ -186,7 +201,7 @@ export default function Home() {
         <article>
           <section>
             <h1 className="pt-6">CARD</h1>
-            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+            <div className="flex p-5 py-10 gap-10 flex-wrap items-center justify-center">
               <div className="card w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
@@ -199,14 +214,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="card max-w-3xl lg:card-side bg-base-100 shadow-xl">
+              <div className="card lg:card-side max-w-3xl bg-base-100 shadow-xl">
                 <figure>
                   <img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">New album is released!</h2>
-                  <p>Click the button to listen on Spotiwhy app.</p>
-                  <div className="card-actions justify-end">
+                  <p className="mb-3">Click the button to listen on Spotiwhy app.</p>
+                  <div className="card-actions justify-end ">
                     <button className="btn btn-primary">Listen</button>
                   </div>
                 </div>
@@ -266,25 +281,25 @@ export default function Home() {
                 </div>
               </div>
               <div className="carousel carousel-vertical h-96 rounded-box">
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
                 </div>
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Burger" />
                 </div>
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
                 </div>
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
                 </div>
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
                 </div>
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
                 </div>
-                <div className="carousel-item h-full">
+                <div className="carousel-item">
                   <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
                 </div>
               </div>
@@ -375,7 +390,7 @@ export default function Home() {
           </section>
         </article>
         {/* CHECKBOX & COLLAPSE */}
-        <article className="article_col_2">
+        <article className="col_2">
           <section>
             <h1 className="pt-6">CHECKBOX</h1>
             <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
@@ -466,7 +481,7 @@ export default function Home() {
           <section>
             <h1 className="pt-6">DRAWER</h1>
             <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
-              <div className="drawer h-96 border border-gray-400">
+              <div className="drawer h-96 border border-base-100">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content grid place-items-center">
                   {/* Page content here */}
@@ -487,11 +502,11 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className="drawer h-96 border border-gray-400">
+              <div className="drawer h-96 border border-base-100">
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col ">
                   {/* Navbar */}
-                  <div className="w-full navbar bg-gray-400">
+                  <div className="w-full navbar  bg-base-100">
                     <div className="flex-none lg:hidden">
                       <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
@@ -531,7 +546,7 @@ export default function Home() {
           </section>
         </article>
         {/* DROPDOWN & FILE INPUT */}
-        <article className="article_col_2">
+        <article className="col_2">
           <section>
             <h1 className="pt-6">DROPDOWN</h1>
             <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">

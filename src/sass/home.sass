@@ -1,21 +1,25 @@
 main
-  @apply flex-col
+  @apply flex-col gap-5
+  @apply overflow-hidden 
   article
-    @apply rounded-xl
-    @apply bg-base-300
-    h1
-      @apply text-2xl font-bold text-center     
+    section
+      @apply bg-base-300 rounded-xl overflow-hidden  
+      h1
+        @apply text-2xl font-bold text-center     
   
-  section
-    @apply bg-base-300
-  
-  .article_col_2
+  .col_2
     @apply grid gap-5 xl:grid-cols-2
     @apply bg-transparent
     section
       @apply grid grid-rows-[auto_1fr]
       @apply rounded-xl
+  
+  .article_bg
+    section
+      div
+        @apply h-[5rem]
+        @apply grid place-items-center 
 
-  .testing
-    &::after
-      content: "asdfasdf"
+  .article_artboard
+    .artboard
+      @apply place-items-center shadow-lg bg-white text-black

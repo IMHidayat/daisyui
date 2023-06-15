@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        color1: "#fff",
+        1: "#00416c",
+        2: "#006ead",
+        3: "#e63e30",
+        4: "#fed103",
       },
       fontSize: {
         fontsize1: "1rem",
@@ -22,7 +25,39 @@ export default {
   plugins: [require("daisyui")],
   daisyui: {
     styled: true,
-    themes: true,
+    themes: [
+      {
+        light: {
+          primary: "#570df8",
+          secondary: "#f000b8",
+          accent: "#1dcdbc",
+          neutral: "#2b3440",
+          "base-100": "#ffffff",
+          info: "#3abff8",
+          success: "#36d399",
+          warning: "#fbbd23",
+          error: "#f87272",
+
+          // "--border-btn": 0,
+        },
+      },
+      {
+        dark: {
+          primary: "#e63e30",
+          "primary-focus": "#fed103",
+          secondary: "#fed103",
+          accent: "#1fb2a6",
+          neutral: "#2a323c",
+          "base-100": "#00416c",
+          info: "#006ead",
+          success: "#00ff19",
+          warning: "#fed103",
+          error: "#f87272",
+
+          // "--border-btn": 0,
+        },
+      },
+    ],
     base: true,
     utils: true,
     logs: true,
