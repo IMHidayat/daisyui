@@ -462,7 +462,7 @@ export default function Home() {
         <article>
           <section>
             <h1 className="pt-6">DIVIDER</h1>
-            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 pb-10">
               <div className="flex flex-col w-full border-opacity-50">
                 <div className="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
                 <div className="divider">OR</div>
@@ -786,7 +786,7 @@ export default function Home() {
           <section>
             <h1 className="pt-6">JOIN</h1>
             <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
-              <div className="join">
+              <div className="join join-vertical lg:join-horizontal">
                 <button className="btn join-item">Button</button>
                 <button className="btn join-item">Button</button>
                 <button className="btn join-item">Button</button>
@@ -803,10 +803,7 @@ export default function Home() {
         <article>
           <section>
             <h1 className="pt-6">SOMETHING</h1>
-            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
-              <input className="btn " type="radio" name="options" aria-label="Radio 3" />
-              <p className="after:content-['sssssssssssss'] "></p>
-            </div>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10"></div>
           </section>
         </article>
       </main>
