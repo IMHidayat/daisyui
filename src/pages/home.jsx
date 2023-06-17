@@ -782,7 +782,7 @@ export default function Home() {
           </section>
         </article>
         {/* JOIN */}
-        <article>
+        <article className="article_join">
           <section>
             <h1 className="pt-6">JOIN</h1>
             <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
@@ -799,11 +799,719 @@ export default function Home() {
             </div>
           </section>
         </article>
-        {/* SOMETHING */}
+        {/* KBD LINK LOADING MASK */}
+        <article className="col_4">
+          <section>
+            <h1 className="pt-6">KBD</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <kbd className="kbd">Shift</kbd>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">LINK</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <a className="link link-primary">simple link</a>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">LOADING</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <span className="loading loading-spinner loading-md"></span>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">MASK</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <img className="mask mask-triangle-4" width={90} src="https://daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.jpg" />
+            </div>
+          </section>
+        </article>
+        {/* MENU */}
         <article>
           <section>
-            <h1 className="pt-6">SOMETHING</h1>
-            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10"></div>
+            <h1 className="pt-6">MENU</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <ul className="menu bg-base-200 rounded-box">
+                <li>
+                  <a>Item 1</a>
+                </li>
+                <li>
+                  <a>Item 2</a>
+                </li>
+                <li>
+                  <a>Item 3</a>
+                </li>
+              </ul>
+              <ul className="menu menu-horizontal bg-base-200 rounded-box mt-6">
+                <li>
+                  <a className="tooltip" data-tip="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a className="tooltip" data-tip="Details">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a className="tooltip" data-tip="Stats">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <ul className="menu bg-base-200 w-56 rounded-box">
+                <li>
+                  <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Item 2
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Item 1
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    Item 3
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+        {/* CODE MOCKUP */}
+        <article>
+          <section>
+            <h1 className="pt-6">CODE MOCKUP</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="mockup-code bg-base-200">
+                <pre data-prefix="$">
+                  <code>npm i daisyui</code>
+                </pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* PHONE MOCKUP */}
+        <article>
+          <section>
+            <h1 className="pt-6">Phone Mockup</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="mockup-phone">
+                <div className="camera"></div>
+                <div className="display">
+                  <div className="artboard artboard-demo phone-1">Hi.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* WINDOW MOCKUP */}
+        <article>
+          <section>
+            <h1 className="pt-6">WINDOW MOCKUP</h1>
+            <div className="p-5 py-10">
+              <div className="mockup-window border bg-base-300">
+                <div className="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* MODAL */}
+        <article>
+          <section>
+            <h1 className="pt-6">MODAL</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <button className="btn btn-primary" onClick={() => window.my_modal_1.showModal()}>
+                MODAL
+              </button>
+              <dialog id="my_modal_1" className="modal">
+                <form method="dialog" className="modal-box max-w-xl">
+                  <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                  <h3 className="font-bold text-lg">Hello!</h3>
+                  <p className="py-4">Press ESC key or click the button below to close</p>
+                  <div className="modal-action">
+                    {/* if there is a button in form, it will close the modal */}
+                    <button className="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+              <button className="btn btn-primary" onClick={() => window.my_modal_2.showModal()}>
+                MODAL OUTSIDE
+              </button>
+              <dialog id="my_modal_2" className="modal">
+                <form method="dialog" className="modal-box">
+                  <h3 className="font-bold text-lg">Hello!</h3>
+                  <p className="py-4">Press ESC key or click outside to close</p>
+                </form>
+                <form method="dialog" className="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+            </div>
+          </section>
+        </article>
+        {/* NAVBAR */}
+        <article>
+          <section>
+            <h1 className="pt-6">NAVBAR</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="navbar bg-base-100">
+                <div className="flex-1">
+                  <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div className="flex-none gap-2">
+                  <div className="form-control">
+                    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                  </div>
+                  <div className="dropdown dropdown-end">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                      <div className="w-10 rounded-full">
+                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                      </div>
+                    </label>
+                    <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                      <li>
+                        <a className="justify-between">
+                          Profile
+                          <span className="badge">New</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a>Settings</a>
+                      </li>
+                      <li>
+                        <a>Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="navbar bg-base-100">
+                <div className="navbar-start">
+                  <div className="dropdown">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
+                      </svg>
+                    </label>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                      <li>
+                        <a>Homepage</a>
+                      </li>
+                      <li>
+                        <a>Portfolio</a>
+                      </li>
+                      <li>
+                        <a>About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="navbar-center">
+                  <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div className="navbar-end">
+                  <button className="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                  <button className="btn btn-ghost btn-circle">
+                    <div className="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                      </svg>
+                      <span className="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                  <div className="dropdown dropdown-end">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle">
+                      <div className="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span className="badge badge-sm indicator-item">8</span>
+                      </div>
+                    </label>
+                    <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                      <div className="card-body">
+                        <span className="font-bold text-lg">8 Items</span>
+                        <span className="text-info">Subtotal: </span>
+                        <div className="card-actions">
+                          <button className="btn btn-primary btn-block">View cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="navbar bg-base-100">
+                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* PAGINATION */}
+        <article>
+          <section>
+            <h1 className="pt-6">PAGINATION</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="join">
+                <button className="join-item btn">1</button>
+                <button className="join-item btn btn-active">2</button>
+                <button className="join-item btn">3</button>
+                <button className="join-item btn">4</button>
+              </div>
+              <div className="join grid grid-cols-2">
+                <button className="join-item btn btn-outline">Previous page</button>
+                <button className="join-item btn btn-outline">Next</button>
+              </div>
+              <div className="join">
+                <button className="join-item btn">«</button>
+                <button className="join-item btn">Page 22</button>
+                <button className="join-item btn">»</button>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* PROGRESS */}
+        <article className="col_3">
+          <section>
+            <h1 className="pt-6">PROGRESS</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <progress className="progress w-56" value="40" max="100"></progress>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">RADIAL PROGRESS</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="radial-progress" style={{ "--value": 70 }}>
+                70%
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">RADIO</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <input type="radio" name="radio-1" className="radio" />
+              <input type="radio" name="radio-1" className="radio" />
+              <div className="w-40">
+                <div className="form-control">
+                  <label className="label cursor-pointer">
+                    <span className="label-text">Red pill</span>
+                    <input type="radio" name="radio-10" className="radio checked:bg-red-500" checked />
+                  </label>
+                </div>
+                <div className="form-control">
+                  <label className="label cursor-pointer">
+                    <span className="label-text">Blue pill</span>
+                    <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* RANGE SLIDER RATING SELECT */}
+        <article className="col_3">
+          <section>
+            <h1 className="pt-6">RANGE SLIDER</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <input type="range" min={0} max="100" value="40" className="range" />
+              <input type="range" min={0} max="100" value="25" className="range" step="25" />
+              <div className="w-full flex justify-between text-xs px-2">
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">RATING</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="rating">
+                <input type="radio" name="rating-1" className="mask mask-star" />
+                <input type="radio" name="rating-1" className="mask mask-star" checked />
+                <input type="radio" name="rating-1" className="mask mask-star" />
+                <input type="radio" name="rating-1" className="mask mask-star" />
+                <input type="radio" name="rating-1" className="mask mask-star" />
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">SELECT</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <select className="select w-full max-w-xs">
+                <option disabled selected>
+                  Pick your favorite Simpson
+                </option>
+                <option>Homer</option>
+                <option>Marge</option>
+                <option>Bart</option>
+                <option>Lisa</option>
+                <option>Maggie</option>
+              </select>
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text">Pick the best fantasy franchise</span>
+                  <span className="label-text-alt">Alt label</span>
+                </label>
+                <select className="select select-bordered">
+                  <option disabled selected>
+                    Pick one
+                  </option>
+                  <option>Star Wars</option>
+                  <option>Harry Potter</option>
+                  <option>Lord of the Rings</option>
+                  <option>Planet of the Apes</option>
+                  <option>Star Trek</option>
+                </select>
+                <label className="label">
+                  <span className="label-text-alt">Alt label</span>
+                  <span className="label-text-alt">Alt label</span>
+                </label>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* STACK */}
+        <article>
+          <section>
+            <h1 className="pt-6">STACK</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="stack">
+                <div className="card shadow-md bg-primary text-primary-content">
+                  <div className="card-body">
+                    <h2 className="card-title">Notification 1</h2>
+                    <p>You have 3 unread messages. Tap here to see.</p>
+                  </div>
+                </div>
+                <div className="card shadow bg-primary text-primary-content">
+                  <div className="card-body">
+                    <h2 className="card-title">Notification 2</h2>
+                    <p>You have 3 unread messages. Tap here to see.</p>
+                  </div>
+                </div>
+                <div className="card shadow-sm bg-primary text-primary-content">
+                  <div className="card-body">
+                    <h2 className="card-title">Notification 3</h2>
+                    <p>You have 3 unread messages. Tap here to see.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* STAT */}
+        <article>
+          <section>
+            <h1 className="pt-6">STAT</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="stats shadow">
+                <div className="stat">
+                  <div className="stat-title">Total Page Views</div>
+                  <div className="stat-value">89,400</div>
+                  <div className="stat-desc">21% more than last month</div>
+                </div>
+              </div>
+              <div className="stats shadow">
+                <div className="stat">
+                  <div className="stat-figure text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                  </div>
+                  <div className="stat-title">Total Likes</div>
+                  <div className="stat-value text-primary">25.6K</div>
+                  <div className="stat-desc">21% more than last month</div>
+                </div>
+                <div className="stat">
+                  <div className="stat-figure text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <div className="stat-title">Page Views</div>
+                  <div className="stat-value text-secondary">2.6M</div>
+                  <div className="stat-desc">21% more than last month</div>
+                </div>
+                <div className="stat">
+                  <div className="stat-figure text-secondary">
+                    <div className="avatar online">
+                      <div className="w-16 rounded-full">
+                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="stat-value">86%</div>
+                  <div className="stat-title">Tasks done</div>
+                  <div className="stat-desc text-secondary">31 tasks remaining</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* STEPS */}
+        <article>
+          <section>
+            <h1 className="pt-6">STEPS</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <ul className="steps">
+                <li className="step step-primary">Register</li>
+                <li className="step step-primary">Choose plan</li>
+                <li className="step">Purchase</li>
+                <li className="step">Receive Product</li>
+              </ul>
+              <ul className="steps steps-vertical lg:steps-horizontal">
+                <li className="step step-primary">Register</li>
+                <li className="step step-primary">Choose plan</li>
+                <li className="step">Purchase</li>
+                <li className="step">Receive Product</li>
+              </ul>
+            </div>
+          </section>
+        </article>
+        {/* SWAP TAB */}
+        <article className="col_2">
+          <section>
+            <h1 className="pt-6">SWAP</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <label className="btn btn-circle swap swap-rotate">
+                {/* this hidden checkbox controls the state */}
+                <input type="checkbox" />
+
+                {/* hamburger icon */}
+                <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                  <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+
+                {/* close icon */}
+                <svg className="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                  <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                </svg>
+              </label>
+              <label className="swap swap-rotate">
+                {/* this hidden checkbox controls the state */}
+                <input type="checkbox" />
+                {/* sun icon */}
+                <svg className="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                </svg>
+                {/* moon icon */}
+                <svg className="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                </svg>
+              </label>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">TAB</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="tabs">
+                <a className="tab tab-bordered">Tab 1</a>
+                <a className="tab tab-bordered tab-active">Tab 2</a>
+                <a className="tab tab-bordered">Tab 3</a>
+              </div>
+              <div className="tabs tabs-boxed">
+                <a className="tab">Tab 1</a>
+                <a className="tab tab-active">Tab 2</a>
+                <a className="tab">Tab 3</a>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* TABLE */}
+        <article>
+          <section>
+            <h1 className="pt-6">TABLE</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="overflow-x-auto">
+                <table className="table">
+                  {/* head */}
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Job</th>
+                      <th>Favorite Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* row 1 */}
+                    <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>Blue</td>
+                    </tr>
+                    {/* row 2 */}
+                    <tr>
+                      <th>2</th>
+                      <td>Hart Hagerty</td>
+                      <td>Desktop Support Technician</td>
+                      <td>Purple</td>
+                    </tr>
+                    {/* row 3 */}
+                    <tr>
+                      <th>3</th>
+                      <td>Brice Swyre</td>
+                      <td>Tax Accountant</td>
+                      <td>Red</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="table">
+                  {/* head */}
+                  <thead>
+                    <tr>
+                      <th>
+                        <label>
+                          <input type="checkbox" className="checkbox" />
+                        </label>
+                      </th>
+                      <th>Name</th>
+                      <th>Job</th>
+                      <th>Favorite Color</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* row 1 */}
+                    <tr>
+                      <th>
+                        <label>
+                          <input type="checkbox" className="checkbox" />
+                        </label>
+                      </th>
+                      <td>
+                        <div className="flex items-center space-x-3">
+                          <div className="avatar">
+                            <div className="mask mask-squircle w-12 h-12">
+                              <img src="https://daisyui.com/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="font-bold">Hart Hagerty</div>
+                            <div className="text-sm opacity-50">United States</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        Zemlak, Daniel and Leannon
+                        <br />
+                        <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                      </td>
+                      <td>Purple</td>
+                      <th>
+                        <button className="btn btn-ghost btn-xs">details</button>
+                      </th>
+                    </tr>
+                    {/* row 2 */}
+                    <tr>
+                      <th>
+                        <label>
+                          <input type="checkbox" className="checkbox" />
+                        </label>
+                      </th>
+                      <td>
+                        <div className="flex items-center space-x-3">
+                          <div className="avatar">
+                            <div className="mask mask-squircle w-12 h-12">
+                              <img src="https://daisyui.com/tailwind-css-component-profile-3@56w.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="font-bold">Brice Swyre</div>
+                            <div className="text-sm opacity-50">China</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        Carroll Group
+                        <br />
+                        <span className="badge badge-ghost badge-sm">Tax Accountant</span>
+                      </td>
+                      <td>Red</td>
+                      <th>
+                        <button className="btn btn-ghost btn-xs">details</button>
+                      </th>
+                    </tr>
+                  </tbody>
+                  {/* foot */}
+                  <tfoot>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Job</th>
+                      <th>Favorite Color</th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </section>
+        </article>
+        {/* TEXTAREA TOAST TOGGLE */}
+        <article className="col_4">
+          <section>
+            <h1 className="pt-6">TEXTAREA</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <textarea className="textarea textarea-bordered" placeholder="Bio"></textarea>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">TOAST</h1>
+            <div className="flex relative flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="toast toast-top toast-center absolute">
+                <div className="alert alert-info">
+                  <span>New mail arrived.</span>
+                </div>
+                <div className="alert alert-success">
+                  <span>Message sent successfully.</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">TOGGLE</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <input type="checkbox" className="toggle" />
+              <div className="form-control">
+                <label className="label cursor-pointer">
+                  <span className="label-text me-10">Remember me</span>
+                  <input type="checkbox" className="toggle" />
+                </label>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 className="pt-6">TOOLTIP</h1>
+            <div className="flex flex-wrap items-center justify-center gap-10 p-5 py-10">
+              <div className="tooltip" data-tip="hello">
+                <button className="btn">Hover me</button>
+              </div>
+            </div>
           </section>
         </article>
       </main>

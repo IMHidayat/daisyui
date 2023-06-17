@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        1: "#00416c",
-        2: "#006ead",
-        3: "#e63e30",
-        4: "#fed103",
+        c1: "#00416c",
+        c2: "#006ead",
+        c3: "#e63e30",
+        c4: "#fed103",
       },
       fontSize: {
         fontsize1: "1rem",
@@ -44,7 +44,6 @@ export default {
       {
         dark: {
           primary: "#e63e30",
-          "primary-focus": "#fed103",
           secondary: "#fed103",
           accent: "#1fb2a6",
           neutral: "#2a323c",
