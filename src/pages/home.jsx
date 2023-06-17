@@ -34,26 +34,22 @@ export default function Home() {
             <h1 className="pt-6">Alert</h1>
             <div className="grid gap-5 p-5">
               <div className="alert">
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current flex-shrink-0 w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>New software update available.</span>
-                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>12 unread messages. Tap to see.</span>
               </div>
-              <div className="alert sm:gap-2">
+              <div className="alert shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
                 <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current flex-shrink-0 w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <div>
-                    <h2 className="font-bold">New Message</h2>
-                    <span>12 unread messages. Tap to see.</span>
-                  </div>
+                  <h3 className="font-bold">New message!</h3>
+                  <div className="text-xs">You have 1 unread message</div>
                 </div>
-                <div>
-                  <button className="btn btn-primary btn-sm md:btn-md rounded-full">Show</button>
-                  <button className="btn btn-secondary btn-sm md:btn-md btn-outline rounded-full">Hide</button>
+                <div className="flex gap-2">
+                  <button className="btn btn-primary btn-sm">Show</button>
+                  <button className="btn btn-outline btn-sm hover:bg-secondary hover:text-black">Hide</button>
                 </div>
               </div>
             </div>
@@ -1472,7 +1468,7 @@ export default function Home() {
             </div>
           </section>
         </article>
-        {/* TEXTAREA TOAST TOGGLE */}
+        {/* TEXTAREA TOAST TOGGLE TOOLTIP */}
         <article className="col_4">
           <section>
             <h1 className="pt-6">TEXTAREA</h1>

@@ -28,32 +28,32 @@ export default {
     themes: [
       {
         light: {
-          primary: "#570df8",
+          primary: "#e63e30",
           secondary: "#f000b8",
           accent: "#1dcdbc",
           neutral: "#2b3440",
-          "base-100": "#ffffff",
+          "base-100": "#00416c",
           info: "#3abff8",
           success: "#36d399",
           warning: "#fbbd23",
           error: "#f87272",
 
-          // "--border-btn": 0,
+          "--border-btn": 0,
         },
       },
       {
         dark: {
-          primary: "#e63e30",
-          secondary: "#fed103",
+          primary: "#b3e140",
+          secondary: "#d926a9",
           accent: "#1fb2a6",
           neutral: "#2a323c",
-          "base-100": "#00416c",
-          info: "#006ead",
-          success: "#00ff19",
-          warning: "#fed103",
+          "base-100": "#1d232a",
+          info: "#3abff8",
+          success: "#36d399",
+          warning: "#fbbd23",
           error: "#f87272",
 
-          // "--border-btn": 0,
+          "--border-btn": 0,
         },
       },
     ],
@@ -62,6 +62,6 @@ export default {
     logs: true,
     rtl: false,
     prefix: "",
-    darkTheme: "dark",
+    darkTheme: "light",
   },
 };
